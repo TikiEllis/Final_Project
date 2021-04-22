@@ -1,52 +1,434 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Haam Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<body>
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-    <a href="#home" class="w3-button w3-bar-item">About</a>
-    <a href="#band" class="w3-button w3-bar-item">Insurance Membership</a>
-    <a href="#tour" class="w3-button w3-bar-item">Get Involved</a>
-    <a href="#contact" class="w3-button w3-bar-item">Resources</a>
-    <a href="#contact" class="w3-button w3-bar-item">Music Links</a>
-  </nav>
+<html lang="en-US">
+	<head>
+		<!-- Meta setup -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<!-- Fav Icon (Browser Tab Icon)-->
+		<link rel="icon" href="images/favicon.ico" />
 
-  <!-- Hero -->
-<section>
-    <img class="mySlides" src="Images/Concert people.jpeg" style="width:100%">
-  </section>
-  <!--Underneath Hero-->
-  <section class="w3-container w3-center w3-content" style="max-width:600px">
-    <h2 class="w3-wide">Austin's Music scene</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		
+		<!-- Main Style -->
+		<link rel="stylesheet" href="style.css" />	
+		
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="css/responsive.css" />	
+		
+	</head>
+	<body>
 
-  </section>
+		<!-- Nav Bar-->	
+		<header class="header-area">
+			<div class="header-item">
+				<a href="#">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<h2>Health Alliance for Austin Musicians</h2>
+				<ul>
+					<li><a href="#"><i class="fas fa-search"></i></a></li>
+					<li><a href="#"><i class="far fa-user"></i></a></li>
+				</ul>
+				<button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			    	<div class="hamburger hamburger--spring">
+					    <div class="hamburger-box">
+					      	<div class="hamburger-inner"></div>
+					    </div>
+				  	</div>
+			  	</button>
+			</div>
+			<nav class="navbar navbar-expand-md">
+			  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    	<ul class="navbar-nav m-auto">
+			      		<li class="nav-item dropdown">
+			        		<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+			          		About
+			        		</a>
+			        		<div class="dropdown-menu"	>
+								<a class="dropdown-item" href="#">Our Story</a>
+								<a class="dropdown-item" href="#">Our Team</a>
+							  <a class="dropdown-item" href="#">Blog</a>
+							  <a class="dropdown-item" href="#">In The News</a>
+							  <a class="dropdown-item" href="#">Community Sponsors</a>
+							  <a class="dropdown-item" href="#">Provider Spotlight</a>
+						  </div>
+			      		</li>
+			      		<li class="nav-item dropdown">
+			        		<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+			          		Insurance
+			        		</a>
+			        		<div class="dropdown-menu"	>
+								<a class="dropdown-item" href="#">Become a Member</a>
+								<a class="dropdown-item" href="#">I am a Member</a>
+								<a class="dropdown-item" href="#">Open Enrollment</a>
+			          			<a class="dropdown-item" href="#">Primary & Secondary Care</a>
+			          			<a class="dropdown-item" href="#">Wellness Programs</a>
+								<a class="dropdown-item" href="#">Dental, Vision, Hearing</a>
+							    <a class="dropdown-item" href="#">Contact Us</a>
+								<a class="dropdown-item" href="#">Provider Links</a>
+								<a class="dropdown-item" href="#">Medical Disclaimer</a>
+			        		</div>
+			      		</li>
+			      		<li class="nav-item dropdown">
+			        		<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+			          		Get Involved
+			        		</a>
+			        		<div class="dropdown-menu"	>
+								<a class="dropdown-item" href="#">Volunteer</a>
+								<a class="dropdown-item" href="#">Internship</a>
+							  <a class="dropdown-item" href="#">Season for caring</a>
+							  <a class="dropdown-item" href="#">Pearl Society</a>
+							  <a class="dropdown-item" href="#">Donate</a>
+							  <a class="dropdown-item" href="#">Host a Fundraiser</a>
+						  </div>
+			      		</li>
+			      		<li class="nav-item dropdown">
+			        		<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+			          		Resources
+			        		</a>
+			        		<div class="dropdown-menu"	>
+								<a class="dropdown-item" href="#">Family & Childcare Resources</a>
+								<a class="dropdown-item" href="#">Job Resources</a>
+							  <a class="dropdown-item" href="#">Financial Resources</a>
+							  <a class="dropdown-item" href="#">Food Resources</a>
+							  <a class="dropdown-item" href="#">Stimulus & Unemployment</a>
+						  </div>
+			      		</li>
+			      		<li class="nav-item dropdown">
+			        		<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+			          		Music Community
+			        		</a>
+			        		<div class="dropdown-menu"	>
+			          			<a class="dropdown-item" href="#">Community Chat Forum</a>
+			          			<a class="dropdown-item" href="#">Haam Marketplace</a>
+							    <a class="dropdown-item" href="#">Book a Musician</a>
+			        		</div>
+			      		</li>
+			    	</ul>
+			  	</div>
+			</nav>
+		</header>	
+		
 
-  <!-- Latest News -->
-  
-<section class="w3-row-padding w3-center w3-light-grey">
-    <h2 class="w3-wide">Latest News</h2>
-    <article class="w3-third">
-        <p>Spotlight</p>
-        <img src="Images/people-2585733_1920.jpg" alt="Random Name" style="width:100%">
-        <p>Whoever </p>
-      </article>
-    <article class="w3-third">
-      <p>Event recap</p>
-      <img src="Images/people-3104635_1920.jpg" alt="Random Name" style="width:100%">
-      <p>info info info</p>
-    </article>
-    <article class="w3-third">
-      <p>Supporter info</p>
-      <img src="Images/laptop-2561018_1920.jpg" alt="Random Name" style="width:100%">
-      <p>Newsletter summary</p>
-    </article>
-  </section>
+		<!-- Hero start -->
+		<div class="banner-area">
+			<img src="images/01.png" alt="" />
+		</div>
+		
 
-</body>
+		<!-- support-area start -->
+		<div class="support-area text-center">
+			<div class="container">
+				<div class="inner-container">
+					<h2>Support Local Music</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="support-item">
+							<div class="support-item-inner">
+								<img src="images/02.png" alt="" />
+							</div>
+							<h2>Local Artists</h2>
+							<p>Browse - Listen - Love</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="support-item">
+							<div class="support-item-inner">
+								<img src="images/03.png" alt="" />
+							</div>
+							<h2>Events</h2>
+							<p>Find upcoming concerts, exclusive events, and live stream schedules </p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="support-item">
+							<div class="support-item-inner">
+								<img src="images/04.png" alt="" />
+							</div>
+							<h2>Music Merch</h2>
+							<p>Support your favorite local groups with clothing and accessories  </p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="support-item">
+							<div class="support-item-inner">
+								<img src="images/05.png" alt="" />
+							</div>
+							<h2>Buy Tickets</h2>
+							<p>From small events to ACL FEST Buy your tickets here </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- haam-area start -->
+		<div class="haam-area">
+			<div class="container">
+				<div class="haam-area-inner">
+					<div class="haam-item">
+						<img src="images/07.png" alt="" />
+						<p>HAAM was designed to provide healthcare to low-income musicians. We recenlty improved our services by connecting musicians with venues, other musicians, and job opportunities so that our clients can maintain consistent work and access to vital resources.</p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- haam-area end -->
+
+		<!-- connect-area start -->
+		<div class="connect-area text-center">			
+			<div class="inner-container2">
+				<div>
+					<h2>Connect with HAAM</h2>
+				</div>
+				<p>We offer many opportunites to get involved</p>
+			</div>
+			<div class="connect-area-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="connect-item">
+								<div class="connect-item-inner">
+									<img src="images/08.png" alt="" />
+								</div>
+								<h2>Make a donation</h2>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="connect-item">
+								<div class="connect-item-inner">
+									<img src="images/09.png" alt="" />
+								</div>
+								<h2>Volunteer</h2>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="connect-item">
+								<div class="connect-item-inner">
+									<img src="images/10.png" alt="" />
+								</div>
+								<h2>Join the Pearl Society</h2>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="connect-item">
+								<div class="connect-item-inner">
+									<img src="images/11.png" alt="" />
+								</div>
+								<h2>Shop HAAM Merch</h2>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="connect-item">
+								<div class="connect-item-inner">
+									<img src="images/12.png" alt="" />
+								</div>
+								<h2>Internship</h2>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="connect-item">
+								<div class="connect-item-inner">
+									<img src="images/13.png" alt="" />
+								</div>
+								<h2>Community Sponsors</h2>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- connect-area end -->
+
+		<!-- Featured artsist start -->
+		<div class="artist-area text-center">
+			<div class="container">
+				<div class="artist-item">
+					<h2>Artist Spotlight</h2>
+					<h3>Live with Willie Nelson</h3>
+				</div>
+				<a href="#">View More</a>
+			</div>
+		</div>
+		<!-- artist-area end -->
+
+		<!-- news-area start -->
+		<div class="news-area text-center">
+			<div class="container">
+				<div class="inner-container3">
+					<h2>Latest News</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-6">
+						<div class="news-item">
+							<div class="news-item-inner">
+								<img src="images/19.png" alt="" />							
+							</div>
+							<div class="news-item-inner2">
+								<h2>Austin Covid-19 Fundraiser updates</h2>
+							</div>
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="news-item">
+							<div class="news-item-inner">
+								<img src="images/20.png" alt="" />							
+							</div>
+							<div class="news-item-inner2">
+								<h2>Future is Female <br>donates $50k to school children in Round Rock</h2>
+							</div>
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="news-item">
+							<div class="news-item-inner">
+								<img src="images/21.png" alt="" />							
+							</div>
+							<div class="news-item-inner2">
+								<h2>HitsHitsHits won best new group at MOOD Awards</h2>
+							</div>
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="news-item">
+							<div class="news-item-inner">
+								<img src="images/22.png" alt="" />							
+							</div>
+							<div class="news-item-inner2">
+								<h2>Community Supporter of the month: James D. has a message for Austin</h2>
+							</div>
+							<a href="#">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="news-item-inner3">
+					<a href="#">See All</a>
+				</div>
+			</div>
+		</div>
+		<!-- news-area end -->
+
+		<!-- Review-area start -->
+		<div class="music-area">
+			<div class="container">
+				<div class="inner-container4">
+					<h2>Keeping Music in Austin Alive and Well</h2>
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="music-item">
+								<p>“Having HAAM allowed me to afford all of the appointments and medications I needed to get back to being in fighting shape for the stage!” <br>— Jamie Bahr - HAAM Member</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="music-item">
+								<p>“In a city where a huge part of the culture (musicians) is getting priced out and finding it increasingly difficult to make a living, HAAM has filled a crucial void by providing services to those who put Austin on the map.” <span>— Faddi El-Assad - HAAM Member</span></p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<div class="music-item">
+								<p>“Not only has HAAM helped me navigate the complex world of healthcare and given me easy access to essential services, but as a Type 1 Diabetic, they literally help keep me alive.” <br>— John Pointer - HAAM Membe</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- music-area end -->
+
+		<!-- provider-area start -->
+		<div class="provider-area">
+			<div class="container">
+				<div class="provider-item">
+					<h2>Provider Spotlight</h2>
+					<img src="images/24.png" alt="" />
+					<ul>
+						<li><a href="#"><img src="images/25.png" alt="" /></a></li>
+						<li><a href="#"><img src="images/26.png" alt="" /></a></li>
+						<li><a href="#"><img src="images/27.png" alt="" /></a></li>
+						<li><a href="#"><img src="images/28.png" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- provider-area end -->
+
+		<!-- subscribe-area start -->
+		<div class="subscribe-area text-center">
+			<div class="container">
+				<div class="subscribe-item">
+					<h2>Subscribe to <a href="#">HAAM’s</a> <a href="#">Newsletter</a></h2>
+					<h6>FOR THE LATEST NEWS, UPDATES, & EVENTS</h6>
+					<form action="#">
+						<input type="text" name="" />
+						<button type="submit">Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- subscribe-area end -->
+
+		<!-- footer-area start -->
+		<footer class="footer-area">
+			<div class="footer-item">
+				<a href="#"><img src="images/logo.png" alt="" /></a>
+			</div>
+			<div class="footer-item2">
+				<h2>Office Location:</h2>
+				<p>3010 S. Lamar Blvd, Ste 200 <br>Austin , TX 78704 <br>512-541-4226
+					<span>Member Email: <a href="#">support@myhaam.org</a> <br>General Email: <a href="#">info@myhaam.org</a></span>
+				</p>
+				<h5>© 2020 Health Alliance for Austin Musicians, All Rights Reserved.</h5>
+			</div>
+			<div>
+				<!-- Social Media Icons Library link -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<!-- Social Media Icons -->
+				<a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+			</div>
+		</footer>
+		<!-- footer-area end -->
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+		<!-- Main JQuery -->
+	<script src="js/Jquery1.js"></script>
+		
+		<!-- Bootstrap jQuery -->
+		<script src="js/bootstrap.js"></script>
+
+		<!-- Fontawesome Script -->
+		<script src="https://kit.fontawesome.com/7749c9f08a.js"></script>
+		
+		<!-- Custom jQuery -->
+		<script src="js/scripts.js"></script>
+		
+		<!-- Scroll-Top button -->
+		<a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>
+		
+	</body>
 </html>
