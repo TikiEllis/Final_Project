@@ -148,7 +148,8 @@ large Screen - Others
 
 }
 //* Small Screen - Tablet */
-) and (max-width: 991px) {
+
+@media screen and (max-width: 991px) {
 
 
 
